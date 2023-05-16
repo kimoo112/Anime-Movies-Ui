@@ -1,8 +1,9 @@
 // ignore_for_file: unused_import, prefer_const_constructors
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:switcher_button/switcher_button.dart';
+
+import '../Constant.dart/colors.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({super.key});

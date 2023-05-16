@@ -1,6 +1,7 @@
 // ignore_for_file: non_constant_identifier_names, prefer_typing_uninitialized_variables, sized_box_for_whitespace, prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 import '../Constant.dart/colors.dart';
 
@@ -78,9 +79,17 @@ class TrendingMoviesContainer extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                         topRight: Radius.circular(9),
                         bottomRight: Radius.circular(9)),
-                    child: Image.network(
-                      Kposter,
-                    )),
+                    child: Image.network(Kposter, errorBuilder:
+                        (BuildContext context, Object exception,
+                            StackTrace? stackTrace) {
+                      return Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Stack(children: [
+                          LoadingAnimationWidget.staggeredDotsWave(
+                              color: cblack2, size: 33),
+                        ]),
+                      );
+                    })),
               ),
             ],
           ),

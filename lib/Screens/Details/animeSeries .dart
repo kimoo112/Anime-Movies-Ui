@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
-import 'package:firbase_signup_signin/Screens/Details.dart';
 import 'package:flutter/material.dart';
 
 import '../../Background/aniBc.dart';
+import '../../Constant.dart/colors.dart';
 import '../../widgets/animeseries.dart';
+import '../Details.dart';
 
 class AnimeSeriesScreen extends StatefulWidget {
   const AnimeSeriesScreen({super.key});
@@ -98,8 +98,19 @@ class _AnimeSeriesScreenState extends State<AnimeSeriesScreen> {
                   ),
                   AnimeSeriesContaier(
                     KImage:
+                        "https://cdn.anime-planet.com/anime/primary/chainsaw-man-1.webp?t=1659090309",
+                    KEpisodes: "12",
+                    KMovie: "Chainsaw Man",
+                    KStar4: Icons.star,
+                    KStar5: Icons.star_half,
+                    Kroute: DetailsScreen(
+                      Ktitle: "Chainsaw Man",
+                    ),
+                  ),
+                  AnimeSeriesContaier(
+                    KImage:
                         "https://cdn.anime-planet.com/anime/primary/ninja-scroll-1.jpg?t=1625728745",
-                    KEpisodes: "9",
+                    KEpisodes: "7",
                     KMovie: "Ninja Scroll",
                     KStar4: Icons.star_half,
                     KStar5: Icons.star_border,
@@ -110,7 +121,7 @@ class _AnimeSeriesScreenState extends State<AnimeSeriesScreen> {
                   AnimeSeriesContaier(
                     KImage:
                         "https://cdn.anime-planet.com/anime/primary/shigurui-death-frenzy-1.jpg?t=1625767072",
-                    KEpisodes: "12",
+                    KEpisodes: "11",
                     KMovie: "Shigurui\nDeath Frenzy",
                     KStar4: Icons.star_half,
                     KStar5: Icons.star_border,

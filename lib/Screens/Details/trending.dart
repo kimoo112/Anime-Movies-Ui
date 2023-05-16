@@ -1,10 +1,11 @@
 // ignore_for_file: prefer_const_constructor, prefer_const_constructors
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
-import 'package:firbase_signup_signin/Screens/Details.dart';
+
 import 'package:flutter/material.dart';
 
+import '../../Constant.dart/colors.dart';
 import '../../widgets/trending.dart';
+import '../Details.dart';
 
 
 

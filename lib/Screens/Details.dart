@@ -1,9 +1,10 @@
-// ignore_for_file: unused_local_variable, file_names, unused_import, prefer_const_constructors_in_immutables, non_constant_identifier_names, duplicate_ignore, prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: unused_local_variable, file_names, unused_import, prefer_const_constructors_in_immutables, non_constant_identifier_names, duplicate_ignore, prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace, sort_child_properties_last, sort_child_properties_last
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
 import 'package:flutter/material.dart';
-
+import '../Constant.dart/colors.dart';
 import '../widgets/button.dart';
+import '../widgets/stars.dart';
+import 'Download/Download.dart';
 
 class DetailsScreen extends StatelessWidget {
   // ignore: non_constant_identifier_names
@@ -36,23 +37,75 @@ class DetailsScreen extends StatelessWidget {
             icon: Icon(Icons.arrow_back_ios_new_outlined)),
       ),
       backgroundColor: cblack2,
-      body: Container(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(height: KHeight*.001,),
-            Container(
-              width: double.infinity,
-              height: KHeight*.5,
-              child: Image.network(Kimage!)),
-            Text("Progress...",
-                style: TextStyle(color: Colors.white, fontSize: 25)),
+      body: Column(
+        children: [
+          SizedBox(
+            height: KHeight * .001,
+          ),
+          Stack(
+            children: [
+              Container(
+                  width: double.infinity,
+                  height: KHeight * .99899,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                    image: NetworkImage(
+                      Kimage!,
+                    ),
+                    fit: BoxFit.cover,
+                  )),
+
+                  // child: Image.network(Kimage!)
+                  child: Align(
+                    alignment: Alignment.bottomLeft,
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                            colors: [
+                              Color.fromARGB(122, 2, 2, 0),
+                              Color.fromARGB(255, 15, 16, 19),
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter),
+                      ),
+                    ),
+                  )),
+              Positioned(
+                bottom: KHeight * .2,
+                left: 20,
+                child: Column(
+                  children: [
+                    Text(
+                      Ktitle!,
+                      style: TextStyle(color: cwhite, fontSize: 16),
+                    ),
+                    Stars5(),
+                    Stars5(),
+                  ],
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                right: 0,
+                left: 0,
+                child: MaterialButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DownloadScreen()));
+                  },
+                  child: Text("WATCH NOW ",
+                      style: TextStyle(color: Colors.white, fontSize: 30)),
+                  hoverColor: corange.withOpacity(.7),
+                  splashColor: corange,
+                ),
                 
-            
-          ],
-        ),
+              ),
+              
+            ],
+          ),
+        ],
       ),
     );
   }

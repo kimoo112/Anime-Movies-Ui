@@ -1,12 +1,12 @@
 // ignore_for_file: unused_import, prefer_const_constructors
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:switcher/core/switcher_size.dart';
 import 'package:switcher_button/switcher_button.dart';
 import 'package:switcher/switcher.dart';
 
 import '../../Background/aniBc.dart';
+import '../../Constant.dart/colors.dart';
 
 
 class SettingsScreen extends StatelessWidget {

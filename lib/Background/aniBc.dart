@@ -1,8 +1,9 @@
 // ignore_for_file: file_names, use_key_in_widget_constructors, library_private_types_in_public_api, prefer_const_constructors
 
 import 'dart:async';
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
 import 'package:flutter/material.dart';
+
+import '../Constant.dart/colors.dart';
 
 class AnimatingBg1 extends StatefulWidget {
   @override

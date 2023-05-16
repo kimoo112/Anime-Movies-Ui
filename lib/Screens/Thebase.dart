@@ -1,13 +1,13 @@
 // ignore_for_file: unused_import, file_names, non_constant_identifier_names, prefer_const_constructors_in_immutables, prefer_const_constructors
 
-import 'package:firbase_signup_signin/Screens/Details.dart';
-import 'package:firbase_signup_signin/Screens/Home.dart';
+
 import 'package:flutter/material.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 
 import '../Constant.dart/colors.dart';
 import 'Bottom/profile.dart';
 import 'Bottom/settings.dart';
+import 'Home.dart';
 
 class TheBase extends StatefulWidget {
   TheBase({super.key});

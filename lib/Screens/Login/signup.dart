@@ -1,13 +1,13 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, unused_import, sort_child_properties_last
 
-import 'package:firbase_signup_signin/Screens/Home.dart';
-import 'package:firbase_signup_signin/Screens/Login/Signin.dart';
-import 'package:firbase_signup_signin/widgets/SplashNaruto.dart';
+
 import 'package:flutter/material.dart';
 import 'package:splash_view/splash_view.dart';
 
 import '../../Background/aniBc.dart';
 import '../../Constant.dart/colors.dart';
+import '../../widgets/SplashNaruto.dart';
+import 'Signin.dart';
 
 
 class SignUpScreen extends StatefulWidget {

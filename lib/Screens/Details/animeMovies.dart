@@ -1,11 +1,12 @@
 // ignore_for_file: prefer_const_constructors, file_names
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
-import 'package:firbase_signup_signin/Screens/Details.dart';
-import 'package:firbase_signup_signin/widgets/movies.dart';
+
 import 'package:flutter/material.dart';
 
 import '../../Background/aniBc.dart';
+import '../../Constant.dart/colors.dart';
+import '../../widgets/movies.dart';
+import '../Details.dart';
 
 class AnimeMoviesScreen extends StatefulWidget {
   const AnimeMoviesScreen({super.key});

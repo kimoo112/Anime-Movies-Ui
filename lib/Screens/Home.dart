@@ -1,6 +1,5 @@
-// ignore_for_file: prefer_const_constructors, unused_import, prefer_const_literals_to_create_immutables, non_constant_identifier_names, file_names
+// ignore_for_file: prefer_const_constructors, unused_import, prefer_const_literals__create_immutables, non_constant_identifier_names, file_names, prefer_const_literals_to_create_immutables
 
-import 'package:firbase_signup_signin/Screens/Details.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_ui_widgets/gradient_ui_widgets.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
@@ -8,6 +7,7 @@ import '../Background/aniBc.dart';
 import '../Constant.dart/colors.dart';
 import '../widgets/movies.dart';
 import '../widgets/searchbar.dart';
+import 'Details.dart';
 import 'Details/animeMovies.dart';
 import 'Details/animeSeries .dart';
 import 'Details/trending.dart';
@@ -57,6 +57,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: SizedBox(
                   width: double.infinity,
                   child: SingleChildScrollView(
+                          physics: BouncingScrollPhysics(),
+
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -133,6 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               MoviesContainer(
                                 Kroute: DetailsScreen(
                                   Ktitle: "BOKU ACADEMIA",
+                                  Kimage: "https://th.bing.com/th/id/R.da2be53047aa565bb86fd35bb38a532a?rik=vzVyOIrkqfg8FA&riu=http%3a%2f%2fotakudome.com%2fwp-content%2fuploads%2f2017%2f10%2fBoku-no-Hero-Academia-Season-2-Visual.jpg&ehk=SOLAA%2bKoMjPolAz3ShrBc6sT21mWm3m2uwmj8lnilPM%3d&risl=&pid=ImgRaw&r=0",
                                 ),
                                 Kname: "BOKU ACADEMIA",
                                 Kmovie:

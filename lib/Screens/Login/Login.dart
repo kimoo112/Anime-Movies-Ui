@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, file_names, unused_import, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, duplicate_ignore
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
-import 'package:firbase_signup_signin/Screens/Login/Signin.dart';
-import 'package:firbase_signup_signin/Screens/Login/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:naruto/Constant.dart/colors.dart';
+import 'package:naruto/Screens/Login/signup.dart';
 import '../../Background/aniBc.dart';
+import 'Signin.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     
-                    Text("NARUTO ",style: TextStyle(fontSize: 40,color: Colors.white,fontWeight: FontWeight.bold),),
+                    Text("NARUTO ",style: TextStyle(fontSize: 40,color: cwhite,fontWeight: FontWeight.bold),),
                     Text("MOVIES ",style: TextStyle(fontSize: 40, fontWeight: FontWeight.w600,color:cyellow ,),),
                   ],
                 ),

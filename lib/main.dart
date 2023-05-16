@@ -1,13 +1,10 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
-import 'package:firbase_signup_signin/Constant.dart/colors.dart';
-import 'package:firbase_signup_signin/Screens/Home.dart';
-import 'package:firbase_signup_signin/Screens/Login/Login.dart';
-import 'package:firbase_signup_signin/Screens/Thebase.dart';
-import 'package:firbase_signup_signin/widgets/SplashNaruto.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'Screens/Thebase.dart';
 import 'authfire.dart';
 
 
@@ -40,7 +37,7 @@ class NarutoApp extends StatelessWidget {
             letterSpacing: 1,
           ),)
       ),
-      home: LoginScreen(),
+      home: TheBase(),
     );
   }
 }

@@ -1,6 +1,5 @@
 // ignore_for_file: unused_import, file_names, unnecessary_import, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:firbase_signup_signin/Screens/Home.dart';
 import 'package:flutter/material.dart';
 import 'package:splash_view/source/presentation/pages/splash_view.dart';
 import 'package:splash_view/source/presentation/presentation.dart';

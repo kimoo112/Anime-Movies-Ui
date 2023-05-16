@@ -1,4 +1,4 @@
-name: firbase_signup_signin
+name: naruto
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -44,6 +44,8 @@ dependencies:
   splash_view: ^2.0.1
   switcher_button: ^0.0.4
   switcher: ^1.0.0
+  loading_animation_widget: ^1.2.0+4
+  animated_text_kit: ^4.2.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

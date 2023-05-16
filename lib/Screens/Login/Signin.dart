@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, unused_import, file_names, sized_box_for_whitespace, non_constant_identifier_names
 
-import 'package:firbase_signup_signin/Screens/Home.dart';
-import 'package:firbase_signup_signin/Screens/Login/signup.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:naruto/Screens/Login/signup.dart';
 
 import '../../Background/aniBc.dart';
 import '../../Constant.dart/colors.dart';
