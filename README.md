@@ -1,4 +1,4 @@
-# firbase_signup_signin
+# Naruto Movies
 
 A new Flutter project.
 
